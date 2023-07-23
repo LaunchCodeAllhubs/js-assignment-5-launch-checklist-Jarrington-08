@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
         let cargoMass = document.querySelector("input[name=cargoMass]");
         if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === "") {
             alert("Please fill out all fields.");
-            preventDefault();
+            event.preventDefault();
         }
    });
    
