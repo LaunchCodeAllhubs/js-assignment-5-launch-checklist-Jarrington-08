@@ -102,7 +102,7 @@ async function myFetch() {
     let planetsReturned;
     planetsReturned = await fetch("https://handlers.education.launchcode.org/static/planets.json");
     const planetList = await planetsReturned.json();
-    console.log(planetList);
+    // console.log(planetList);
     return planetList;
 }
 

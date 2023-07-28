@@ -1,17 +1,21 @@
 // Write your JavaScript code here!
 
-const { addDestinationInfo } = require("./scriptHelper");
+// const { addDestinationInfo } = require("./scriptHelper");
+
+
 
 window.addEventListener("load", function() {
 
+   document.getElementById("faultyItems").style.visibility = 'hidden';
    let listedPlanets;
+
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
    let listedPlanetsResponse = myFetch();   
    listedPlanetsResponse.then(function (result) {
        listedPlanets = result;
-       console.log(listedPlanets);
+      //  console.log(listedPlanets);
     }).then(function () {
-       console.log(listedPlanets);
+      //  console.log(listedPlanets);
 
    // randomly select a planet using pickPlanet function
       const planet = pickPlanet(listedPlanets);
